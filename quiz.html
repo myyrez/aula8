@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexQuiz.css">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Quiz de Hades</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="quiz" class="justify-center flex-column">
+            <div id="hud">
+                <div class="item-hud">
+                    <p id="textoProgresso" class="hud-prefixo">Pergunta</p>
+                    <div id="barraProgresso">
+                        <div id="barraProgressoFull"></div>
+                    </div>
+                </div>
+                <div class="item-hud">
+                    <p class="hud-prefixo">Pontuação</p>
+                    <h1 class="texto-hud-principal" id="pontuacao">0</h1>
+                </div>
+            </div>
+            <h1 id="pergunta">Pergunta</h1>
+            <div class="container-escolha">
+                <p class="escolha-prefixo">A</p>
+                <p class="escolha-texto" data-numero="1">Escolha 1</p>
+            </div>
+            <div class="container-escolha">
+                <p class="escolha-prefixo">B</p>
+                <p class="escolha-texto" data-numero="2">Escolha 2</p>
+            </div>
+            <div class="container-escolha">
+                <p class="escolha-prefixo">C</p>
+                <p class="escolha-texto" data-numero="3">Escolha 3</p>
+            </div>
+            <div class="container-escolha">
+                <p class="escolha-prefixo">D</p>
+                <p class="escolha-texto" data-numero="4">Escolha 4</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+
+</body>
+
+</html>

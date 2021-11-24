@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(135deg, #EFBCD5, #BE97C6, #8661C1);
+    background-attachment: fixed;
+}
+
+header {
+    padding: 1px;
+    background-color: #2E294E;
+    border-bottom: 2px solid #4B5267;
+}
+
+header h1 {
+    color: white;
+    padding-left: 30px;
+}
+
+.container {
+    background-color: white;
+    border: 2px solid #4B5267;
+    border-radius: 2px;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    display: flex;
+    border-left: 1px solid #4B5267;
+    border-right: 1px solid #4B5267;
+    width: 100%;
+    padding: 2%;
+}
+
+.button-calcular{
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    height: auto;
+}

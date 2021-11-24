@@ -1,0 +1,78 @@
+body {
+    color: white;
+}
+
+.container-escolha {
+    display: flex;
+    margin-bottom: 1rem;
+    width: 100%;
+    border-radius: 4px;
+    background: black;
+    font-size: 2.5rem;
+    min-width: 80rem;
+    height: 5rem;
+}
+
+.container-escolha:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(95, 184, 43, 0.6);
+    transition: tranform 150ms;
+    transform: scale(1.03);
+}
+
+.escolha-prefixo {
+    font-size: 4rem;
+    padding: 0rem 4rem;
+    color: white;
+    
+}
+
+.escolha-texto {
+    font-size: 4rem;
+    padding: 0rem;
+    width: 100%;
+}
+
+.correto {
+    background: rgb(93, 141, 93);
+}
+
+.incorreto {
+    background: rgb(124, 70, 70);
+}
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefixo {
+    padding-top: 30rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.texto-hud-principal {
+    text-align: center;
+}
+
+#barraProgresso {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid rgb(162, 162, 221);
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#barraProgressoFull {
+    height: 100%;
+    background: rgb(162, 162, 221);
+    width: 0%;
+}
+
+@media screen and (max-width: 768px) {
+    .container-escolha {
+        min-width: 40rem;
+    }
+}

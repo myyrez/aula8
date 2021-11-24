@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quizFim.css">
+    <title>Fim do Quiz</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="fim" id="flex-column flex-center">
+            <h1 id="parabenizacao">parabenizacao</h1>
+            <div class="parte-pontuacao">
+                <p id="pontuacaoFinal" class="pontuacao">score</p>
+            </div>
+            <img id="img" src="https://64.media.tumblr.com/d86e3b613dd0b1977369256317b181c5/c32107cd4d73422a-65/s540x810/8073b3d2a51d5d34dfc53c8bc7abb7de85817220.gifv" alt="zag">
+            <div class="parte-btn">
+                <p id="parabenizacao2" class="parabenizacao">parabenizacao2</p>
+                <a href="quiz.html" class="btn">Jogar novamente</a>
+                <p class="parabenizacao">Quer conhecer mais sobre o jogo?</p>
+                <a href="https://hades.fandom.com/wiki/Hades_Wiki" class="btn">Hades Wiki</a>
+            </div>
+        </div>
+
+        <script>
+            const pontuacaoFinal = document.querySelector("#pontuacaoFinal")
+            const pontuacaoMaisRecente = localStorage.getItem("pontuacaoMaisRecente")
+
+            pontuacaoFinal.innerText = pontuacaoMaisRecente + " pontos"
+
+            let parabenizacao = document.getElementById("parabenizacao")
+            let parabenizacao2 = document.getElementById("parabenizacao2")
+            let img = document.getElementById("img")
+
+            if (pontuacaoMaisRecente == 500) {
+                document.getElementById("parabenizacao").innerText = "Parabéns! Você acertou tudo e conseguiu"
+                img.src = "https://64.media.tumblr.com/7b699ce09ec3cde1e5e4102ef42c2786/c32107cd4d73422a-ff/s540x810/adafaaa34c7b94751df0194115bfe07e5ab4467a.gifv"
+                document.getElementById("parabenizacao2").innerText = "Gostaria de jogar mais uma vez?"
+            } else if (pontuacaoMaisRecente >= 300 && pontuacaoMaisRecente < 500) {
+                document.getElementById("parabenizacao").innerText = "Parabéns! Você acertou a maioria e conseguiu"
+                img.src = "https://64.media.tumblr.com/6fcdeb37ae1332cfb0863a646e630d43/c32107cd4d73422a-6f/s540x810/d5a71e384c6d9eb6326d640a17160ffcec4dca78.gifv"
+                document.getElementById("parabenizacao2").innerText = "Gostaria de tentar um pouco mais?"
+            } else if (pontuacaoMaisRecente > 0 && pontuacaoMaisRecente < 300) {
+                document.getElementById("parabenizacao").innerText = "Boa, mas você conseguiu apenas"
+                img.src = "https://64.media.tumblr.com/6fcdeb37ae1332cfb0863a646e630d43/c32107cd4d73422a-6f/s540x810/d5a71e384c6d9eb6326d640a17160ffcec4dca78.gifv"
+                document.getElementById("parabenizacao2").innerText = "Gostaria de tentar um pouco mais?"
+            } else {
+                document.getElementById("parabenizacao").innerText = "Infelizmente, você errou todas e conseguiu"
+                img.src = "https://64.media.tumblr.com/d86e3b613dd0b1977369256317b181c5/c32107cd4d73422a-65/s540x810/8073b3d2a51d5d34dfc53c8bc7abb7de85817220.gifv"
+                document.getElementById("parabenizacao2").innerText = "Gostaria de tentar um pouco mais?"
+            }
+        </script>
+
+</body>
+
+</html>
