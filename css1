@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    background-image: linear-gradient(135deg, rgb(80, 51, 39), rgb(34, 33, 33) 60%);
+    background-attachment: fixed;
+    font-family: verdana;
+}
+
+header{
+    padding: 1px;
+    color: white;
+    background-color: rgb(34, 33, 33);
+    border-bottom: 4px solid rgb(107, 106, 106);
+}
+
+header h1{
+    padding-left: 5%;
+}
+
+.container{
+    background-image: linear-gradient(135deg, rgb(245, 216, 163), white);
+    border: 2px solid rgb(107, 106, 106);
+    border-radius: 2px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.row{
+    display: flex;
+}
+
+.col{
+    display: flex;
+    border-left: 1px solid rgb(107, 106, 106);
+    border-right: 1px solid rgb(107, 106, 106);
+    width: 100%;
+    padding: 8px;
+    justify-content: center;
+}
